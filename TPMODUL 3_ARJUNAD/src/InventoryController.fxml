@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="309.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InventoryController">
+   <children>
+      <TableView layoutX="42.0" layoutY="50.0" prefHeight="200.0" prefWidth="302.0">
+        <columns>
+          <TableColumn fx:id="albumNameColumn" prefWidth="75.0" text="Album Name" />
+          <TableColumn fx:id="artistColumn" prefWidth="75.0" text="Artist" />
+            <TableColumn fx:id="availableColumn" prefWidth="75.0" text="Availible" />
+            <TableColumn fx:id="totalColumn" prefWidth="75.0" text="Total" />
+        </columns>
+      </TableView>
+      <Button layoutX="42.0" layoutY="260.0" mnemonicParsing="false" onAction="#rentselected" text="Rent Selected" />
+      <Button layoutX="356.0" layoutY="260.0" mnemonicParsing="false" onAction="#hapus" text="Hapus" />
+      <Button layoutX="435.0" layoutY="260.0" mnemonicParsing="false" onAction="#tambah" text="Tambah" />
+      <Button layoutX="513.0" layoutY="260.0" mnemonicParsing="false" onAction="#update" text="Update" />
+      <TextField layoutX="371.0" layoutY="67.0" prefHeight="26.0" prefWidth="191.0" />
+      <TextField layoutX="371.0" layoutY="110.0" prefHeight="26.0" prefWidth="191.0" />
+      <TextField layoutX="371.0" layoutY="153.0" prefHeight="26.0" prefWidth="191.0" />
+      <Text fx:id="JudulAlbumField" layoutX="370.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Judul Album" />
+      <Text fx:id="NamaArtisField" layoutX="374.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama Artis" />
+      <Text fx:id="JumlahTotalField" layoutX="371.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jumlah Total  " />
+      <TextField layoutX="371.0" layoutY="196.0" prefHeight="26.0" prefWidth="191.0" />
+      <Text fx:id="JumlahRentedField" layoutX="374.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jumlah Rented" />
+      <Text layoutX="241.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zeppeli’s listening bar" />
+   </children>
+</AnchorPane>
